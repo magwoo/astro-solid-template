@@ -1,4 +1,5 @@
 node_modules
+public/tailwind.css
 dist
 .astro
 *.d.ts
