@@ -1,0 +1,28 @@
+{
+  "name": "astro-solid-template",
+  "version": "1.0.0",
+  "scripts": {
+    "build:tailwind": "tailwindcss build -i ./src/tailwind.css -o ./public/tailwind.css",
+    "watch:tailwind": "tailwindcss build -i ./src/tailwind.css -o ./public/tailwind.css --watch",
+    "dev:astro": "astro dev",
+    "build:astro": "astro build",
+    "preview:astro": "astro preview",
+    "dev": "concurrently --kill-others \"npm run watch:tailwind\" \"npm run dev:astro\"",
+    "preview": "npm run build && npm run preview:astro",
+    "build": "npm run build:tailwind && npm run build:astro"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "prettier-plugin-astro": "^0.14.1",
+    "@astrojs/solid-js": "^4.4.1",
+    "astro": "^4.14.6",
+    "concurrently": "^8.2.2",
+    "tailwindcss": "^3.4.10"
+  },
+  "dependencies": {
+    "solid-js": "^1.8.22"
+  }
+}

@@ -1,0 +1,9 @@
+---
+import Base from "@layouts/Base.astro";
+import { Counter } from "@components/Counter";
+---
+
+<Base title="Astro + Solid Template">
+  <span class="text-5xl">Astro + Solid Template</span>
+  <Counter initial={5} client:load />
+</Base>
